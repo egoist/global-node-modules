@@ -19,7 +19,11 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "global",
+    "npm",
+    "node_modules",
+    "modules",
+    "path"
   ],
   "devDependencies": {
     "ava": "latest",
