@@ -16,6 +16,7 @@ const globalNodeModules = require('global-node-modules')
 globalNodeModules()
   .then(nodeModulesPath => {
     console.log(nodeModulesPath)
+    //=> /Users/egoist/.nvm/versions/node/v4.2.4/lib/node_modules
   })
   .catch(e => {
     console.log(e.stack)
