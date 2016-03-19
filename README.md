@@ -23,6 +23,17 @@ globalNodeModules()
   })
 ```
 
+## API
+
+### globalNodeModules(moduleName)
+
+#### moduleName
+
+Type: `string`
+Default: `''`
+
+Give a moduleName to append to the path.
+
 ## License
 
 MIT © [EGOIST](https://github.com/egoist)
