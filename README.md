@@ -29,7 +29,7 @@ globalNodeModules()
 
 #### moduleName
 
-Type: `string`
+Type: `string`  
 Default: `''`
 
 Give a moduleName to append to the path.
