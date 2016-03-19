@@ -1,6 +1,6 @@
 {
   "name": "global-node-modules",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Find the global node_modules path.",
   "license": "MIT",
   "repository": "egoist/global-node-modules",
