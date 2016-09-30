@@ -1,7 +1,7 @@
 import test from 'ava'
 import fn from './'
 
-test('main', async t => {
-  const nodeModulesPath = await fn()
+test('main', t => {
+  const nodeModulesPath = fn()
   t.is(typeof nodeModulesPath, 'string')
 })

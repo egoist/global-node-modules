@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "ava && eslint *.js"
   },
   "files": [
     "index.js"
@@ -26,14 +26,11 @@
     "path"
   ],
   "devDependencies": {
-    "ava": "latest",
-    "xo": "latest"
+    "ava": "^0.16.0",
+    "eslint": "^3.6.1",
+    "eslint-config-egoist": "^1.0.4"
   },
-  "xo": {
-    "semicolon": false,
-    "space": 2
-  },
-  "dependencies": {
-    "which": "^1.2.4"
+  "eslintConfig": {
+    "extends": "egoist/esnext"
   }
 }
