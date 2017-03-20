@@ -11,11 +11,28 @@ $ npm install --save global-node-modules
 ## Usage
 
 ```js
-const gnm = require('global-node-modules')
+const globalNodeModules = require('global-node-modules')
 
-gnm('eslint')
-//=> /Users/egoist/.nvm-fish/v6.4.0/lib/node_modules/eslint
+globalNodeModules()
+  .then(nodeModulesPath => {
+    console.log(nodeModulesPath)
+    //=> /Users/egoist/.nvm/versions/node/v4.2.4/lib/node_modules
+  })
+  .catch(e => {
+    console.log(e.stack)
+  })
 ```
+
+## API
+
+### globalNodeModules(moduleName)
+
+#### moduleName
+
+Type: `string`  
+Default: `''`
+
+Give a moduleName to append to the path.
 
 ## License
 
