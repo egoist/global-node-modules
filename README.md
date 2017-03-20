@@ -21,6 +21,9 @@ globalNodeModules()
   .catch(e => {
     console.log(e.stack)
   })
+
+// sync method
+const nodeModulesPath = globalNodeModules.sync()
 ```
 
 ## API
@@ -33,6 +36,8 @@ Type: `string`
 Default: `''`
 
 Give a moduleName to append to the path.
+
+### globalNodeModules.sync(moduleName)
 
 ## License
 
